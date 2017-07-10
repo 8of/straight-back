@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Выпрями спину</string>
+    <string name="notification_title">Выпрями спину</string>
+    <string name="notification_description">Пришло время расправить плечи, дружище</string>
+</resources>

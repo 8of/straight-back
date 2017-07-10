@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Straight Back</string>
+    <string name="notification_title">Straight your back</string>
+    <string name="notification_description">It\'s time to flex one\'s shoulders</string>
+</resources>
