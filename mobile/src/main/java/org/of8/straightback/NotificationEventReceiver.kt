@@ -2,10 +2,9 @@ package org.of8.straightback
 
 import android.content.Context
 import android.content.Intent
-import android.support.v4.content.WakefulBroadcastReceiver
 import android.app.AlarmManager
 import android.app.PendingIntent
-import android.util.Log
+import androidx.legacy.content.WakefulBroadcastReceiver
 import java.util.*
 
 class NotificationEventReceiver: WakefulBroadcastReceiver() {
@@ -24,7 +23,7 @@ class NotificationEventReceiver: WakefulBroadcastReceiver() {
         }
 
         if (serviceIntent != null) {
-            WakefulBroadcastReceiver.startWakefulService(context, serviceIntent)
+            startWakefulService(context, serviceIntent)
         }
     }
 
@@ -36,7 +35,7 @@ class NotificationEventReceiver: WakefulBroadcastReceiver() {
 
     fun setupAlarm(context: Context?) {
         if (context == null) {
-            return;
+            return
         }
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val alarmIntent = getStartPendingIntent(context)
@@ -49,7 +48,7 @@ class NotificationEventReceiver: WakefulBroadcastReceiver() {
 
     fun cancelAlarm(context: Context?) {
         if (context == null) {
-            return;
+            return
         }
         val alarmIntent = getStartPendingIntent(context)
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager

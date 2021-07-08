@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/straightback.iml" filepath="$PROJECT_DIR$/straightback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/straight-back.iml" filepath="$PROJECT_DIR$/.idea/modules/straight-back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobile/straight-back.mobile.iml" filepath="$PROJECT_DIR$/.idea/modules/mobile/straight-back.mobile.iml" />
     </modules>
   </component>
 </project>

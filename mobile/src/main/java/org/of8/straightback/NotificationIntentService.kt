@@ -7,14 +7,9 @@ import android.app.PendingIntent
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.os.Build
-import android.support.v4.content.WakefulBroadcastReceiver
-import android.support.v7.app.NotificationCompat
-import android.support.v4.app.NotificationCompat.WearableExtender;
 
-import android.util.Log
-import android.media.RingtoneManager
-
-
+import androidx.core.app.NotificationCompat
+import androidx.legacy.content.WakefulBroadcastReceiver
 
 class NotificationIntentService(name: String?) : IntentService(name) {
 
@@ -52,7 +47,7 @@ class NotificationIntentService(name: String?) : IntentService(name) {
 
     private fun processStartNotification() {
         val wearBackground = BitmapFactory.decodeResource(resources, R.drawable.wear_background)
-        val wearableExtender = WearableExtender().setBackground(wearBackground)
+        val wearableExtender = NotificationCompat.WearableExtender().setBackground(wearBackground)
         val builder = NotificationCompat.Builder(this)
         builder.setContentTitle(getString(R.string.notification_title))
                 .setAutoCancel(true)
