@@ -9,7 +9,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class MainActivity : AppCompatActivity() {
 
     private val mMainButton: FloatingActionButton
-        get() = findViewById(R.id.startButton) as FloatingActionButton
+        get() = findViewById<FloatingActionButton>(R.id.startButton)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
